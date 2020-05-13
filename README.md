@@ -1,4 +1,4 @@
-This application exposes an HTTP REST API that uses JSON that fulfils the following criteria:
+This application exposes HTTP REST APIs that uses JSON that fulfils the following criteria:
 <ul>
 <li> Users can create a Movie</li>
 <li>the movie should have a title, a category and a star rating (from 0.5 to 5)</li>
@@ -9,16 +9,17 @@ This application exposes an HTTP REST API that uses JSON that fulfils the follow
 </ul
 
 
-<h3>Running Examples</h3>
+# Running Examples
+ 
 Download the zip or clone the Git repository.<br>
 Unzip the zip file (if you downloaded one)<br>
 Open Command Prompt and Change directory (cd) to folder containing pom.xml<br>
 Open Eclipse<br>
 File -> Import -> Existing Maven Project -> Navigate to the folder where you unzipped the zip<br>
 Select the right project<br>
+Setup mysql database configuration in application.properties file <br>
 Choose the Spring Boot Application file (search for @SpringBootApplication)<br>
 Right Click on the file and Run as Java Application<br>
-Set mysql configuration application.properties <br>
 You are all Set
 
 

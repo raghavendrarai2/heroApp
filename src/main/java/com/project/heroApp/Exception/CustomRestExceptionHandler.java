@@ -31,7 +31,7 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(BadRequestAlertException.class)
 	public ResponseEntity<Object> BadRequestException(final BadRequestAlertException e) {
-		ApiError apiError = new ApiError(HttpStatus.NOT_FOUND, e.getLocalizedMessage(), e.getMessage());
+		ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, e.getLocalizedMessage(), e.getMessage());
 
 		return new ResponseEntity<Object>(apiError, new HttpHeaders(), apiError.getStatus());
 	}

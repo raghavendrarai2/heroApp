@@ -1,4 +1,4 @@
-package com.project.heroApp.service.impl;
+package com.project.heroApp.serviceImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,10 +11,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.project.heroApp.Exception.MovieNotFoundException;
 import com.project.heroApp.dto.MovieDTO;
+import com.project.heroApp.mapper.MovieMapper;
 import com.project.heroApp.model.Movie;
 import com.project.heroApp.repository.MovieRepository;
 import com.project.heroApp.service.MovieService;
-import com.project.heroApp.service.mapper.MovieMapper;
 
 /**
  * Service Implementation for managing {@link Movie}.

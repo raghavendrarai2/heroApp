@@ -1,4 +1,4 @@
-package com.project.heroApp.service.mapper;
+package com.project.heroApp.mapper;
 
 import org.mapstruct.Mapper;
 
